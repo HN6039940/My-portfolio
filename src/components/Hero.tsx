@@ -1,18 +1,20 @@
 import MyImage from "../assets/image/MyImage.PNG";
+import { FaGithub } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
 const Hero = () => {
   return (
-    <section className=" bg-hero-pattern min-w-full overflow-hidden bg-cover">
+    <section className=" min-w-full overflow-hidden bg-hero-pattern bg-cover  lg:bg-left">
       <div className=" mx-auto grid w-11/12 grid-cols-1 place-items-center gap-10 py-10 text-primary ">
         {/* image wrapper */}
-        <article className=" h-40 w-40">
+        <figure className=" h-40 w-40">
+          {/* image */}
           <img
             src={MyImage}
             alt={"MyImage"}
             className=" h-full w-full rounded-[50%] object-cover  object-center"
           />
-          {/* image */}
-        </article>
+        </figure>
         <article>
           <div className=" grid grid-cols-1 place-items-center gap-3">
             {/* intro */}
@@ -29,8 +31,12 @@ const Hero = () => {
 
           {/* sns icon */}
           <div className="flex justify-center gap-3">
-            <p>X</p>
-            <p>GIT HUB</p>
+            <a href="#">
+              <FaGithub className=" text-3xl text-primary"></FaGithub>
+            </a>
+            <a href="#" className=" hover:drop-shadow-2xl">
+              <FaXTwitter className=" stroke-black text-3xl text-primary"></FaXTwitter>
+            </a>
           </div>
         </article>
       </div>

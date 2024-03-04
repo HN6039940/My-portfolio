@@ -3,11 +3,15 @@ import "./App.css";
 import Navbar from "./components/NavBar";
 import Hero from "./components/Hero";
 import Profile from "./components/Profile";
+import AboutMe from "./components/AboutMe";
+import Skills from "./components/Skills";
+import Projects from "./components/Projects";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <>
-      <main className=" font-poppins">
+      <main className=" box-border font-poppins">
         {/* nav */}
         <Navbar />
         {/* hero */}
@@ -15,13 +19,16 @@ function App() {
         <div className=" bg-gradient-to-tr from-secondary via-tertiary to-primary">
           {/* profile */}
           <Profile />
-          {/* about */}
+          {/* aboutMe */}
+          <AboutMe />
+          {/* skills */}
+          <Skills />
           {/* projects */}
-          <div className=" min-h-dvh ">
-            <h1 className=" text-white">Hello World</h1>
-          </div>
+          <Projects />
         </div>
       </main>
+      {/* footer */}
+      <Footer />
     </>
   );
 }

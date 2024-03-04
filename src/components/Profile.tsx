@@ -3,22 +3,22 @@ import MyImage from "../assets/image/MyImage.PNG";
 const Profile = () => {
   return (
     <section className=" min-w-full  py-10">
-      <article className="container mx-auto grid grid-cols-1 place-items-center gap-3 px-3">
-        <h2 className="text-2xl font-bold text-primary">
+      <article className="container mx-auto grid grid-cols-1 place-items-center gap-8 px-3">
+        <h2 className="stroke-slate-950 text-3xl font-bold text-primary">
           <span>Profile</span>
         </h2>
         {/* profile container */}
-        <div className=" grid grid-cols-1 place-items-center gap-5 rounded-md border-2 border-secondary bg-slate-50 p-8">
+        <div className="  grid grid-cols-1 place-items-center gap-5 rounded-md border-4 border-quaternary bg-slate-50 p-8">
           {/* image container */}
-          <div className="size-20">
+          <figure className="size-24">
             {/* image */}
             <img
               src={MyImage}
-              alt=""
-              className=" size-full rounded-[50%] bg-sky-600 object-cover"
+              alt="profile image"
+              className=" size-full rounded-[50%]  border-2 border-primary object-cover"
             />
-          </div>
-          <div className="grid grid-cols-1 place-items-start gap-3 text-sm ">
+          </figure>
+          <div className="grid grid-cols-1 place-items-start gap-3 text-sm font-bold text-secondary ">
             {/* intro container */}
             {/* birthday */}
             {/* now */}
