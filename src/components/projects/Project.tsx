@@ -1,4 +1,4 @@
-import ColorGenerator from "../assets/image/ColorGenerator.png";
+import ColorGenerator from "../../assets/image/ColorGenerator.png";
 
 import ProjectsLink from "./projectsLink";
 

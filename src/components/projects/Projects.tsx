@@ -2,11 +2,11 @@ import Project from "./Project";
 
 const Projects = () => {
   return (
-    <section className="min-w-full">
+    <section className="min-w-full" id="projects">
       <article className=" container mx-auto px-3">
         <div className="grid grid-cols-1 place-items-center gap-8 py-10">
           {/* project title */}
-          <h2 className=" text-3xl font-bold text-primary sm:text-4xl">
+          <h2 className=" text-3xl font-bold capitalize text-primary sm:text-4xl">
             projects
           </h2>
           {/* projects grid container */}

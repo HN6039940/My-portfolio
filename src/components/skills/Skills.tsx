@@ -1,15 +1,15 @@
-import { skillData } from "../data/skillData";
+import { skillData } from "../../data/skillData";
 import Skill from "./Skill";
 
 const Skills = () => {
   return (
-    <section className=" min-w-full">
+    <section className=" min-w-full lg:mb-16" id="skills">
       {/* skills container */}
       <article className=" container mx-auto px-3">
         {/* icon container */}
         <div className="grid grid-cols-1 place-items-center gap-8 py-10">
           {/* skills title */}
-          <h2 className=" text-3xl font-bold text-primary sm:text-4xl">
+          <h2 className="  text-3xl font-bold capitalize text-primary sm:mb-5 sm:text-4xl">
             skills
           </h2>
           {/* skills content */}

@@ -1,26 +1,11 @@
 import { ComponentPropsWithoutRef } from "react";
+import NavLinks from "./NavLinks";
 
 type PCNavbarProps = ComponentPropsWithoutRef<"nav">;
 const PCNavbar = (props: PCNavbarProps) => {
   return (
-    <nav {...props}>
-      <ul className=" flex items-center justify-center gap-5 text-xl font-bold capitalize text-primary">
-        <li className="cursor-pointer">
-          <a href="#">top</a>
-        </li>
-        <li className=" cursor-pointer">
-          <a href="#"> profile </a>
-        </li>
-        <li className=" cursor-pointer">
-          <a href="#"> about me </a>
-        </li>
-        <li className=" cursor-pointer">
-          <a href="#"> skills </a>
-        </li>
-        <li className=" cursor-pointer">
-          <a href="#"> projects </a>
-        </li>
-      </ul>
+    <nav className={props.className}>
+      <NavLinks className=" flex items-center justify-center gap-5 text-lg font-bold capitalize text-primary lg:text-2xl xl:gap-10" />
     </nav>
   );
 };
