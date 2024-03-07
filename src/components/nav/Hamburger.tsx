@@ -46,7 +46,10 @@ const Hamburger = () => {
         </div>
       </div>
       <div className=" col-span-2 col-start-1 row-span-2 row-start-1 flex flex-col items-end justify-center">
-        <NavLinks className=" space-y-5 text-2xl font-bold capitalize text-primary" />
+        <NavLinks
+          setIsOpen={setIsOpen}
+          className=" space-y-5 text-2xl font-bold capitalize text-primary"
+        />
       </div>
     </nav>
   );

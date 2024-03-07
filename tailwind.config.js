@@ -10,7 +10,7 @@ export default {
         quaternary: "#030226",
       },
       fontFamily: {
-        poppins: ["Poppins", "sans-serif"],
+        poppins: ["Poppins", "Noto Sans JP", "sans-serif"],
       },
       backgroundImage: {
         "hero-pattern": "url('/src/assets/image/heroBackground.jpg')",

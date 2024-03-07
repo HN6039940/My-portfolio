@@ -1,12 +1,14 @@
 import "./App.css";
 
 import Navbar from "./components/nav/NavBar";
-import Hero from "./components/Hero";
+import Hero from "./components/hero/Hero";
 import Profile from "./components/Profile";
 import AboutMe from "./components/AboutMe";
 import Skills from "./components/skills/Skills";
 import Projects from "./components/projects/Projects";
 import Footer from "./components/Footer";
+
+import { moveBg } from "./assets/style/Main.style";
 
 function App() {
   return (
@@ -16,7 +18,10 @@ function App() {
         <Navbar />
         {/* hero */}
         <Hero />
-        <div className=" bg-gradient-to-tr from-secondary via-tertiary to-primary">
+        <div
+          css={moveBg}
+          className=" bg-gradient-to-tr from-secondary via-tertiary to-primary"
+        >
           {/* profile */}
           <Profile />
           {/* aboutMe */}
