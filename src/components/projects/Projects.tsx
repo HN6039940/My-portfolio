@@ -1,6 +1,16 @@
+import { useQuery } from "@tanstack/react-query";
 import Project from "./Project";
+import { getSpaceEntries } from "../../functions/contenfulFn";
 
 const Projects = () => {
+  const { data, isLoading, isError } = useQuery({
+    queryKey: ["projects"],
+    queryFn: async () => {
+      const response = await getSpaceEntries("portFolio");
+      return response;
+    },
+  });
+
   return (
     <section className="min-w-full" id="projects">
       <article className=" container mx-auto px-3">
