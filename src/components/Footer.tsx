@@ -1,5 +1,3 @@
-import React from "react";
-
 const Footer = () => {
   return (
     <footer className="box-border min-w-full bg-quaternary py-5 font-poppins">
