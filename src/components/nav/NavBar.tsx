@@ -11,6 +11,7 @@ const NavBar = () => {
         <BiHomeSmile
           css={rotateHome}
           className=" size-8 cursor-pointer text-primary lg:size-12 "
+          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
         ></BiHomeSmile>
         <Hamburger />
         <PCNavbar className="hidden sm:block" />
